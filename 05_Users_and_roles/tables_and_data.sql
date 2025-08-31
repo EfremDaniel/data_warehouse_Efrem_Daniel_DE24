@@ -55,6 +55,8 @@ SELECT * FROM flavors;
 
 -- change to ice_cream_reader and select data 
 USE ROLE ice_cream_reader;
+SELECT CURRENT_ROLE();
+SHOW GRANTS TO ROLE ice_cream_reader;
 SELECT * FROM customers;
 
 -- insufficient privilege for ice_Cream_reader to insert data
