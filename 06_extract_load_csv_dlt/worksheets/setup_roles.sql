@@ -1,17 +1,3 @@
--- NOTE: you should place the create user part 
--- in a separate file and .gitignore it as it contains credentials
-
-
--- create dlt user and dlt role 
-USE ROLE USERADMIN;
-
-CREATE ROLE IF NOT EXISTS movies_dlt_role;
-
-CREATE USER IF NOT EXISTS extract_loader
-    PASSWORD = 'Bethlehem2727!' -- create a password and fill in here
-    DEFAULT_WAREHOUSE = dev_wh;
-
-
 -- grant role to user
 USE ROLE SECURITYADMIN;
 
